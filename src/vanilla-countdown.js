@@ -111,6 +111,9 @@
 				var second_element = document.querySelector('.vanilla-countdown-numbers .number-second');
 				second_element.innerHTML = '00';
 				clearInterval(interval);
+                if( typeof  options.action  == "function" )
+                options.action();
+
 				return false;
 
 			}

@@ -16,12 +16,13 @@
 		var element = document.querySelector('#my-element');
 
 		var counter = new vanillaCountdown({
-			year: 2015,
-			month: 11,
-			day: 27,
-			hour: 23,
-			minute: 59,
+			year: 2016,
+			month: 10,
+			day: 29,
+			hour: 15,
+			minute: 39,
 			second: 59,
+            action: function(){console.log('Time is over')},
 			text: false // Default: true
 		}, element);
 
